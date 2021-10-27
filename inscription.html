@@ -4,11 +4,27 @@
 <head>
     <title>inscripton</title>
     <meta charset="utf-8">
+
+    <style>
+            div{
+                background-color: #000000;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(RSMAG.jpg);
+                background-position: center;
+                background-size: cover;
+                color: #ffffff;
+                padding: 1em;
+                height: 100%;
+            }
+    </style>
 </head>
 
 <body>
+<div>
     <h1>Inscription</h1>
-    
+    <!--Formulaire-->
+    <form action="'/actiion.php" method="POST">
+
+    <!--Input Radio-->
     <input type="radio" name="statut" checked id="admin">
     <label for="admin">Administrateur</label>
 
@@ -17,8 +33,8 @@
 
     <input type="radio" name="statut" id="eleve">
     <label for="eleve">Élèves</label>
-    <br><br><br>
     
+    <br><br><br>
     <!--Données personnelles-->
     <!--penser à donner une classe à chaquer input et bouton pour le CSS-->
     
@@ -26,9 +42,9 @@
             <br><br>
     <input type="text" placeholder="Prénom"> Prénom
             <br><br>
-    <input type="number" min="18" max="25" value="18"> Age
+    <input type="number" min="18" max="99" value="18"> Age
             <br><br>
-    <input type="text" placeholder="Section"> Section
+    <input type="text" placeholder="Section (falcutatif)"> Section (falcutatif)
             <br><br>
     <input type="text" placeholder="Adresse du régiment"> Adresse du régiment
             <br><br>
@@ -38,11 +54,14 @@
             <br><br><br><br>
     
     <!--Bouton d'inscription-->
-    <button>S'inscrire</button>
-
+    <button><a href="inscription2.html">S'inscrire</a></button>
+    <p>*Le bouton "valider" n'est pas encore fonctionnel; appuyez sur "s'inscrire" pour avancer*</p>
+    <input type="submit" value="valider">
+    </form>
     <!--retour menu-->
     <button><a href="accueil.html">Retour menu</a></button>
-   
+
+</div>
 </body>
 
 </html>

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Graphique</title>
+    <meta charset="utf-8">
+    <title>Graphique</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+<button><a href="accueil.html">Retour menu</a></button>
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script>
+    const labels = [
+  'Session 1',
+  'Session 2',
+  'Session 3',
+  'Session 4',
+  'Session 5',
+  'Session 6',
+];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
+  }]
+};
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+  // === include 'setup' then 'config' above ===
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+
+</script>
+
+
+
+
+</body>

@@ -20,8 +20,9 @@
         }
     </style>
 
+<form action='/action.php' method='post'>
     <table border="5" width="100%">
-        <caption>*Nom de l'apprenant(e)*</caption>
+      <caption>*Nom de l'apprenant(e)*</caption>
         <thead>
             <tr>
                 <th></th>
@@ -33,24 +34,26 @@
         <tbody>
             <tr>
                 <td>session 1</td>
-                <td>***</td>
-                <td>***</td>
-                <td>***</td>
+                <td><input type="number" min="0" max="20"></td>
+                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>session 2</td>
-                <td>***</td>
-                <td>***</td>
-                <td>***</td>
+                <td><input type="number" min="0" max="20"></td>
+                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                <td><input type="text"></td>
             </tr>
             <tr>
                 <td>session 3</td>
-                <td>***</td>
-                <td>***</td>
-                <td>***</td>
+                <td><input type="number" min="0" max="20"></td>
+                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                <td><input type="text"></td>
             </tr>
         </tbody>
     </table>
+<input type="submit" value="valider">
+</form>
 
     <br><br><br>
     <button><a href="graphique.html">Voir graphique</a></button>

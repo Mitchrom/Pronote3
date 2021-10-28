@@ -1,67 +1,67 @@
 <html>
 
 <head>
-    <title>Graphique</title>
-    <meta charset="utf-8">
-    <title>Graphique</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <style>
-      .graph{
-        background-color: #000000;
-  background-image: linear-gradient(rgba(134, 51, 51, 0.1), rgba(0, 0, 0, 0.1)), url(RSMAG.jpg);
-  background-position: center;
-  background-size: cover;
-  color: #ffffff;
-  padding: 1em;
-  text-align: center;
-  height: 100%;
-      }
-    </style>
+  <title>Graphique</title>
+  <meta charset="utf-8">
+  <title>Graphique</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <style>
+    .graph {
+      background-color: #000000;
+      background-image: linear-gradient(rgba(134, 51, 51, 0.1), rgba(0, 0, 0, 0.1)), url(RSMAG.jpg);
+      background-position: center;
+      background-size: cover;
+      color: #ffffff;
+      padding: 1em;
+      text-align: center;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-<div class="graph">
-<button><a href="accueil.html">Retour menu</a></button>
-<div class="canva">
-    <canvas id="monGraph"></canvas>
-</div>
+  <div class="graph">
+    <button><a href="accueil.html">Retour menu</a></button>
+    <div class="canva">
+      <canvas id="monGraph"></canvas>
+    </div>
 
-<script>
-    const labels = [
-  'Session 1',
-  'Session 2',
-  'Session 3',
-  'Session 4',
-  'Session 5',
-  'Session 6',
-];
-const data = {
-  labels: labels,
-  datasets: [{
-    label: 'My First dataset',
-    backgroundColor: 'red',
-    borderColor: 'black',
-    data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
-  }]
-};
+    <script>
+      const labels = [
+        'Session 1',
+        'Session 2',
+        'Session 3',
+        'Session 4',
+        'Session 5',
+        'Session 6',
+      ];
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: 'red',
+          borderColor: 'black',
+          data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20],
+        }]
+      };
 
-const config = {
-  type: 'line',
-  data: data,
-  options: {}
-};
+      const config = {
+        type: 'line',
+        data: data,
+        options: {}
+      };
 
-  // === include 'setup' then 'config' above ===
+      // === include 'setup' then 'config' above ===
 
-  const myChart = new Chart(
-    document.getElementById('monGraph'),
-    config
-  );
-
-  
-</script>
+      const myChart = new Chart(
+        document.getElementById('monGraph'),
+        config
+      );
 
 
+    </script>
 
-</div>
+
+
+  </div>
 </body>

@@ -2,66 +2,66 @@
 <html>
 
 <head>
-    <title>inscripton</title>
-    <meta charset="utf-8">
+        <title>inscripton</title>
+        <meta charset="utf-8">
 
-    <style>
-            div{
-                background-color: #000000;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(RSMAG.jpg);
-                background-position: center;
-                background-size: cover;
-                color: #ffffff;
-                padding: 1em;
-                height: 100%;
-            }
-    </style>
+        <style>
+                div {
+                        background-color: #000000;
+                        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(fond.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        color: #000000;
+                        padding: 1em;
+                        height: 100%;
+                }
+        </style>
 </head>
 
 <body>
-<div>
-    <h1>Inscription</h1>
-    <!--Formulaire-->
-    <form action="'/actiion.php" method="POST">
+        <div>
+                <h1>Inscription</h1>
+                <!--Formulaire-->
+                <form action="'/actiion.php" method="POST">
 
-    <!--Input Radio-->
-    <input type="radio" name="statut" checked id="admin">
-    <label for="admin">Administrateur</label>
+                        <!--Input Radio-->
+                        <input type="radio" name="statut" checked id="admin">
+                        <label for="admin">Administrateur</label>
 
-    <input type="radio" name="statut" id="prof">
-    <label for="prof">Profeusseur</label>
+                        <input type="radio" name="statut" id="prof">
+                        <label for="prof">Profeusseur</label>
 
-    <input type="radio" name="statut" id="eleve">
-    <label for="eleve">Élèves</label>
-    
-    <br><br><br>
-    <!--Données personnelles-->
-    <!--penser à donner une classe à chaquer input et bouton pour le CSS-->
-    
-    <input type="text" placeholder="Nom de famille"> Nom de famille
-            <br><br>
-    <input type="text" placeholder="Prénom"> Prénom
-            <br><br>
-    <input type="number" min="18" max="99" value="18"> Age
-            <br><br>
-    <input type="text" placeholder="Section (falcutatif)"> Section (falcutatif)
-            <br><br>
-    <input type="text" placeholder="Adresse du régiment"> Adresse du régiment
-            <br><br>
-    <input type="text" placeholder="Adresse personnelle"> Adresse personnelle
-            <br><br>
-    <input type="text" placeholder="Numéro de téléphone"> Numéro de téléphone
-            <br><br><br><br>
-    
-    <!--Bouton d'inscription-->
-    <button><a href="inscription2.html">S'inscrire</a></button>
-    <p>*Le bouton "valider" n'est pas encore fonctionnel; appuyez sur "s'inscrire" pour avancer*</p>
-    <input type="submit" value="valider">
-    </form>
-    <!--retour menu-->
-    <button><a href="accueil.html">Retour menu</a></button>
+                        <input type="radio" name="statut" id="eleve">
+                        <label for="eleve">Élèves</label>
 
-</div>
+                        <br><br><br>
+                        <!--Données personnelles-->
+                        <!--penser à donner une classe à chaquer input et bouton pour le CSS-->
+
+                        <input type="text" placeholder="Nom de famille"> Nom de famille
+                        <br><br>
+                        <input type="text" placeholder="Prénom"> Prénom
+                        <br><br>
+                        <input type="number" min="18" max="99" value="18"> Age
+                        <br><br>
+                        <input type="text" placeholder="Section (falcutatif)"> Section (falcutatif)
+                        <br><br>
+                        <input type="text" placeholder="Adresse du régiment"> Adresse du régiment
+                        <br><br>
+                        <input type="text" placeholder="Adresse personnelle"> Adresse personnelle
+                        <br><br>
+                        <input type="text" placeholder="Numéro de téléphone"> Numéro de téléphone
+                        <br><br><br><br>
+
+                        <!--Bouton d'inscription-->
+                        <button><a href="inscription2.html">S'inscrire</a></button>
+                        <p>*Le bouton "valider" n'est pas encore fonctionnel; appuyez sur "s'inscrire" pour avancer*</p>
+                        <input type="submit" value="valider">
+                </form>
+                <!--retour menu-->
+                <button><a href="accueil.html">Retour menu</a></button>
+
+        </div>
 </body>
 
 </html>

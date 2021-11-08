@@ -10,49 +10,49 @@
     <style>
         .reglage {
             background-color: #000000;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(RSMAG.jpg);
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(fond.jpg);
             background-position: center;
             background-size: cover;
-            color: #ffffff;
+            color: #000000;
             padding: 1em;
             text-align: center;
             height: 100%;
         }
     </style>
-<form action='/action.php' method='post'>
-    <table border="5" width="100%">
-      <caption>*Nom de l'apprenant(e)*</caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Notes</th>
-                <th>Moyenne</th>
-                <th>Commentaires</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>session 1</td>
-                <td><input type="number" min="0" max="20"></td>
-                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>session 2</td>
-                <td><input type="number" min="0" max="20"></td>
-                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
-                <td><input type="text"></td>
-            </tr>
-            <tr>
-                <td>session 3</td>
-                <td><input type="number" min="0" max="20"></td>
-                <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
-                <td><input type="text"></td>
-            </tr>
-        </tbody>
-    </table>
-<input type="submit" value="valider">
-</form>
+    <form action='/action.php' method='post'>
+        <table border="5" width="100%">
+            <caption>*Nom de l'apprenant(e)*</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Notes</th>
+                    <th>Moyenne</th>
+                    <th>Commentaires</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>session 1</td>
+                    <td><input type="number" min="0" max="20"></td>
+                    <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>session 2</td>
+                    <td><input type="number" min="0" max="20"></td>
+                    <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>session 3</td>
+                    <td><input type="number" min="0" max="20"></td>
+                    <td>*Fonction qui calculera les moyennes en fonctions des notes*</td>
+                    <td><input type="text"></td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="submit" value="valider">
+    </form>
 
     <br><br><br>
     <button><a href="graphique.html">Voir graphique</a></button>

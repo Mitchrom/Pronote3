@@ -18,21 +18,112 @@
 </head>
 
 <body>
-    <div>
+<div class="all">
+<div class="top">
+
+    <h1>Gérer les accès</h1>
+<br><br>
+
+<button id="el1" class="allow" onclick="clique('el1')">élève 1</button>
+<button id="el2" class="allow" onclick="clique('el2')">élève 2</button>
+<button id="prof1" class="allow" onclick="clique('prof1')">professeur 1</button>
+<button id="prof2" class="allow" onclick="clique('prof2')">professeur 2</button>
+<br><br><br>
+
+</div>
+
+<!--Voir les accés bloqués ou autorisés-->
+<div class="bottomA">
+    <h2>Accès autorisé</h2>
+<br><br><br>
+
+    <p id="ela1">élève 1</p>
+    <p id="ela2">élève 2</p>
+    <p id="profa1">professeur 1</p>
+    <p id="profa2">professeur 2</p>    
+
+<br><br><br><br>
+</div>
+
+<div class="bottomB">
+    <h2>Accès bloqué</h2>
+<br><br><br>
+    <p id="elb1" class="hidden">élève 1</p>
+    <p id="elb2" class="hidden">élève 2</p>
+    <p id="profb1" class="hidden">professeur 1</p>
+    <p id="profb2" class="hidden">professeur 2</p>
+<br><br><br><br>
+</div>
+
+<div class="bouton">    
+<button><a href="menuadmin.html">Retour Admin</a></button>
+<br><br>
+<button><a href="accueil.html">Retour menu</a></button>
+</div>
+
+</div>
+
+<script>
+function clique(bouton){
+
+if(bouton=="el1"){
+    var x = confirm("Bloquer cet utlisateur?")
+        if(x == true){
+            var y = alert('utilisateur bloqué')
+            document.getElementById('ela1').classList.add('hidden')
+            document.getElementById('elb1').classList.remove('hidden')
+        }
+        else if(x == false) {
+            var z = alert('Accès rétabli')
+            document.getElementById('ela1').classList.remove('hidden')
+            document.getElementById('elb1').classList.add('hidden')
+        }
+}
 
 
+else if(bouton=="el2"){
+    var x = confirm("Bloquer cet utlisateur?")
+        if(x == true){
+            var y = alert('utilisateur bloqué')
+            document.getElementById('ela2').classList.add('hidden')
+            document.getElementById('elb2').classList.remove('hidden')
+        }
+        else if(x == false) {
+            var z = alert('Accès rétabli')
+            document.getElementById('ela2').classList.remove('hidden')
+            document.getElementById('elb2').classList.add('hidden')
+        }
+}
 
-        <h1>Gérer les accès</h1>
-        <br><br>
 
-        <button id="profil1">élève 1</button>
-        <button id="profil2">élève 2</button>
-        <button id="profil3">professeur 1</button>
-        <button id="profil4">professeur 2</button>
-        <br><br><br>
-        <button><a href="menuadmin.html">Retour Admin</a></button><button><a href="accueil.html">Retour
-                menu</a></button>
+else if(bouton=="prof1"){
+    var x = confirm("Bloquer cet utlisateur?")
+        if(x == true){
+            var y = alert('utilisateur bloqué')
+            document.getElementById('profa1').classList.add('hidden')
+            document.getElementById('profb1').classList.remove('hidden')
+        }
+        else if(x == false) {
+            var z = alert('Accès rétabli')
+            document.getElementById('profa1').classList.remove('hidden')
+            document.getElementById('profb1').classList.add('hidden')
+        }
+}
 
 
-    </div>
+else if(bouton=="prof2"){
+    var x = confirm("Bloquer cet utlisateur?")
+        if(x == true){
+            var y = alert('utilisateur bloqué')
+            document.getElementById('profa2').classList.add('hidden')
+            document.getElementById('profb2').classList.remove('hidden')
+        }
+        else if(x == false) {
+            var z = alert('Accès rétabli')
+            document.getElementById('profa2').classList.remove('hidden')
+            document.getElementById('profb2').classList.add('hidden')
+        }
+}
+}
+</script>
 </body>

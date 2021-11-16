@@ -1,5 +1,5 @@
 <?php
-$mysqlConnection = new PDO(
+$pdo = new PDO(
     'mysql:host=localhost;dbname=pronote;charset=utf8',
     'root',
     ''
